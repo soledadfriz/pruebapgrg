@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Informacion de Inicio -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Constructora PGRG</title>
+        <link rel="shortcut icon" type="image/icon" href="assets/images/url-image.png"/>
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/> 
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/> 
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-progressbar-3.3.4.css"/> 
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>    
+    
+  </head>
+
+  <!-- Encabezado de la Pagina -->
+  <body>
+  
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
+  <header id="header">
+    <div class="header-top">
+      <div class="container">
+        <form action="">
+          <div id="search">
+          <input type="text" placeholder="Type your search keyword here and hit Enter..." name="s" id="m_search" style="display: inline-block;">
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-contact">
+              <ul>
+                <li>
+                  <div class="phone">
+                    <i class="fa fa-phone"></i>
+                    aqui fono de contacto
+                  </div>
+                </li>
+                <li>
+                  <div class="mail">
+                    <i class="fa fa-envelope"></i>
+                    constructorapgrg@gmail.com
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <div class="header-login">
+              <a class="login modal-form" data-target="#login-form" data-toggle="modal" href="#">Inicio de Sesion</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- Inicio Sesion  -->
+  
+  <div aria-hidden="false" role="dialog" tabindex="-1" id="login-form" class="modal leread-modal fade in">
+    <div class="modal-dialog">
+      <div id="login-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-unlock-alt"></i>Iniciar Sesion</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Contraseña" class="form-control">
+            </div>
+             <div class="loginbox">
+              <label><input type="checkbox"><span>Recordarme</span></label>
+              <button class="btn signin-btn" type="button">Entrar</button>
+            </div>                    
+          </form>
+        </div>
+        <div class="modal-footer footer-box">
+          <a href="#">Olvidaste Tu Contraseña ?</a>
+          <span> <a id="signup-btn" href="#">Registrarse</a></span>            
+        </div>
+      </div>
+
+      <!-- Fin de Inicio Sesion  -->
+      
+      <!-- Registro Nuevo Usuario-->
+      
+      <div id="signup-content" class="modal-content">
+        <div class="modal-header">
+          <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title"><i class="fa fa-lock"></i>Inicio Sesion</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input placeholder="Nombre" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Usuario" class="form-control">
+            </div>
+            <div class="form-group">
+              <input placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Contraseña" class="form-control">
+            </div>
+            <div class="signupbox">
+              <span>Ya tienes una cuenta <a id="login-btn" href="#">Resistrarse</a></span>
+            </div>
+            <div class="loginbox">
+              <label><input type="checkbox"><span>Recordarme</span><i class="fa"></i></label>
+              <button class="btn signin-btn" type="button">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fin de Registro de Usuario -->
+
+
+  <!-- Inicio del Menu-->
+
+  <section id="menu-area">      
+    <nav class="navbar navbar-default" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- LOGO -->          
+          <!-- Si en lugar de logo lleva texto Modificar aqui -->
+         <!-- <a class="navbar-brand" href="index.html"> PGRG</a>   -->           
+          <!-- IMG BASED LOGO  -->
+           <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> 
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="index.html">Pagina inicial</a></li>
+            <li><a href="feature.html">Nosotros</a></li>
+            <li><a href="service.html">Servicios</a></li>
+            <li><a href="portfolio.html">Proyectos</a></li>
+
+            <!-- Ejemplo de Menu Desplegable -->
+            <!--
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="blog-archive.html">Blog Archive</a></li>                
+                <li><a href="blog-single-with-left-sidebar.html">Blog Single with Left Sidebar</a></li>
+                <li><a href="blog-single-with-right-sidebar.html">Blog Single with Right Sidebar</a></li>
+                <li><a href="blog-single-with-out-sidebar.html">Blog Single with out Sidebar</a></li>           
+              </ul>
+            </li>
+        -->
+        <!-- Fin de Ejemplo de Menu desplegable -->
+
+          <!-- Pagina de Error -->
+        <!--            <li><a href="404.html">404 Page</a></li>            -->   
+            <li><a href="contact.html">Contactos</a></li>
+          </ul>                     
+        </div>
+        <a href="#" id="search-icon">
+          <i class="fa fa-search">            
+          </i>
+        </a>
+      </div>     
+    </nav>
+  </section>
+
+  <!-- Fin de Menu --> 
+  
+  <!-- Start single page header -->
+  <section id="single-page-header">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-left">
+              <h2>Servicios</h2>
+              </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="single-page-header-right">
+              <ol class="breadcrumb">
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End single page header -->
+  
+  <!-- Start Service -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title-area">
+            <h2 class="title">Our Services</h2>
+            <span class="line"></span>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="service-content">
+            <div class="row">
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Web Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Digital Design</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Marketing</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-shopping-cart service-icon"></i>
+                  <h4 class="service-title">E-commerce</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-mobile service-icon"></i>
+                  <h4 class="service-title">App Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-rocket service-icon"></i>
+                  <h4 class="service-title">S.E.O</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+                <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-desktop service-icon"></i>
+                  <h4 class="service-title">Web Development</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-paw service-icon"></i>
+                  <h4 class="service-title">Digital Design</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+              <!-- Start single service -->
+              <div class="col-md-4 col-sm-6">
+                <div class="single-service wow zoomIn">
+                  <i class="fa fa-magic service-icon"></i>
+                  <h4 class="service-title">Marketing</h4>
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+              </div>
+              <!-- End single service -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
+
+  <!-- Start subscribe us -->
+  <section id="subscribe">
+    <div class="subscribe-overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="subscribe-area">
+              <h2 class="wow fadeInUp">Subscribe Newsletter</h2>
+              <form action="" class="subscrib-form wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <input type="text" placeholder="Enter Your E-mail..">
+                <button class="subscribe-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End subscribe us -->
+
+  <!-- Start footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-left">
+            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="footer-right">
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>    
+  <!-- mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+ <!-- counter -->
+  <script src="assets/js/waypoints.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="assets/js/wow.js"></script> 
+  <!-- progress bar   -->
+  <script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>  
+  
+ 
+  <!-- Custom js -->
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+    
+  </body>
+</html>
